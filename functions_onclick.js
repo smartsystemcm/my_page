@@ -15,7 +15,7 @@ function button_big_gateway(_this) {
 		  		_this.style.backgroundColor = "#195B6A";
 			}
 
-			location.href = url[1];
+			//location.href = url[1];
 	    }
 	};
 	xhttp.open("GET", url[0], true);
