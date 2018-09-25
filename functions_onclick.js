@@ -14,11 +14,9 @@ function button_big_gateway(_this) {
 		 		_this.value = "ABERTO";
 		  		_this.style.backgroundColor = "#195B6A";
 			}
-
-			location.href = url[0];
 	    }
 	};
-	xhttp.open("GET", url[0], true);
+	xhttp.open("GET", "writefile.php?data=Client:4", true);
 	xhttp.send();
 
 
