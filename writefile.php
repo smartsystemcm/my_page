@@ -14,13 +14,14 @@ function gravar_dados($msg){
 }
 
 function main(){
+	while(1){
+		$req_dump = print_r($_REQUEST, true);
+		$fp = file_put_contents('datastorage.txt', $req_dump, FILE_APPEND);
 
-	$req_dump = print_r($_REQUEST, true);
-	$fp = file_put_contents('datastorage.txt', $req_dump, FILE_APPEND);
-
-	if(strlen($_GET["data"]) != 0){
-		gravar_dados($GET["data"]);
-	}	
+		if(strlen($_GET["data"]) != 0){
+			gravar_dados($GET["data"]);
+		}	
+	}
 }
 
 main();
