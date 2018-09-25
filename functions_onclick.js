@@ -12,6 +12,7 @@ function button_big_gateway(_this) {
 		_this.style.backgroundColor = "#195B6A";
 	}
 	$.get("writefile.php", { data:"Client:4"});    
+	
 }
 
 function button_small_gateway(_this) {
