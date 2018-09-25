@@ -1,6 +1,6 @@
 function button_big_gateway(_this) {
 	var url=new Array();
-	url[0]="http://cg-pagina-web-marcelo.1d35.starter-us-east-1.openshiftapps.com/writefile.php?data=Client:4";
+	url[0]="https://smartsystemcm.github.io/my_page/writefile.php?data=Client:4";
 
 	location.href = url[0];
 	if(_this.value == "ABERTO"){
@@ -15,7 +15,7 @@ function button_big_gateway(_this) {
 
 function button_small_gateway(_this) {
 	var url=new Array();
-	url[0]="http://cg-pagina-web-marcelo.1d35.starter-us-east-1.openshiftapps.com/writefile.php?data=Client:5";
+	url[0]="https://smartsystemcm.github.io/my_page/writefile.php?data=Client:5";
 
 	location.href = url[0];
 	if(_this.value == "ABERTO"){
