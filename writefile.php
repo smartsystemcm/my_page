@@ -14,8 +14,8 @@ function gravar_dados($msg){
 }
 
 function main(){
-	if(strlen($_GET['data']) != 0){
-		gravar_dados($_GET['data']);
+	if(strlen($_REQUEST['data']) != 0){
+		gravar_dados($_REQUEST['data']);
 	}	
 }
 

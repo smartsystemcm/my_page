@@ -18,8 +18,6 @@ function button_big_gateway(_this) {
 	};
 	xhttp.open("GET", "writefile.php?data=Client:4", true);
 	xhttp.send();
-	location.href = url[1];
-
 }
 
 function button_small_gateway(_this) {
