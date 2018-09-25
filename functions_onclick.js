@@ -11,7 +11,7 @@ function button_big_gateway(_this) {
 		_this.value = "ABERTO";
 		_this.style.backgroundColor = "#195B6A";
 	}
-	$.get("writefile.php", { data:"Client:4"});    
+	$.get("writefile.php", {"data=Client:4"});    
 	
 }
 
