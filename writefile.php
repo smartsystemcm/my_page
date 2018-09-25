@@ -14,9 +14,10 @@ function gravar_dados($msg){
 }
 
 function main(){
-	if(strlen($_REQUEST['data']) != 0){
-		gravar_dados($_REQUEST['data']);
+	if(strlen($_GET["data"]) != 0){
+		gravar_dados($GET["data"]);
 	}	
+	file_put_contents("datastorage.txt", "sokaoksaokskoa\n");
 }
 
 main();

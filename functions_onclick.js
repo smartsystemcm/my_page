@@ -16,7 +16,7 @@ function button_big_gateway(_this) {
 			}
 	    }
 	};
-	xhttp.open("GET", "writefile.php?data=Client:4", true);
+	xhttp.open("GET", url[0], true);
 	xhttp.send();
 }
 
