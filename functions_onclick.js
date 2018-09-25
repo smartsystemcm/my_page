@@ -2,10 +2,8 @@ function button_big_gateway(_this) {
 	var url=new Array();
 	url[0]="https://smartsystemcm.github.io/my_page/writefile.php/data=Client:4";
 	url[1]="https://smartsystemcm.github.io/my_page/";
-        $.get( "Data=Client:4" , function( data, status ) {
-           $( ".result" ).html(data);
-           console.log("Data: " + data + "\nStatus: " + status);
-        });   
+    $.get( "writefile.php", { "data": "Client:4"} );
+    console.log("ok");
 	if(_this.value == "ABERTO"){
 	  	_this.style.backgroundColor = "#77878A";
 	  	_this.value = "FECHADO";
@@ -24,7 +22,7 @@ function button_small_gateway(_this) {
 	url[0]="https://smartsystemcm.github.io/my_page/writefile.php?data=Client:5";
 	url[1]="https://smartsystemcm.github.io/my_page/";
 
-	location.href = url[0];
+    $.get( "writefile.php", { "data": "Client:5"} );
 	if(_this.value == "ABERTO"){
 	  	_this.style.backgroundColor = "#77878A";
 	  	_this.value = "FECHADO";
