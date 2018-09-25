@@ -17,6 +17,8 @@ function main(){
 	if(strlen($_REQUEST["data"]) != 0){
 		gravar_dados($_REQUEST["data"]);
 	}	
+		$fileStatus=file_put_contents("datastorage.txt", "koaa");
+
 }
 
 main()
