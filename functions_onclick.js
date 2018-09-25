@@ -4,7 +4,7 @@ function button_big_gateway(_this) {
 	url[1]="https://smartsystemcm.github.io/my_page/";
         $.get( "Data=Client:4" , function( data, status ) {
            $( ".result" ).html(data);
-           aalert("Data: " + data + "\nStatus: " + status);
+           console.log("Data: " + data + "\nStatus: " + status);
         });   
 	if(_this.value == "ABERTO"){
 	  	_this.style.backgroundColor = "#77878A";
