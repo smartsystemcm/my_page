@@ -3,7 +3,12 @@ function button_big_gateway(_this) {
 	url[0]="https://smartsystemcm.github.io/my_page/writefile.php?data=Client:4";
 	url[1]="https://smartsystemcm.github.io/my_page/";
 
-	location.href = url[0];
+	//location.href = url[0];
+	$.ajax({
+	  type: "GET",
+	  url: "writefile.php",
+	  data: { "data=Client:4" }
+	});
 	if(_this.value == "ABERTO"){
 	  	_this.style.backgroundColor = "#77878A";
 	  	_this.value = "FECHADO";
@@ -32,5 +37,5 @@ function button_small_gateway(_this) {
   		_this.style.backgroundColor = "#195B6A";
 	}
 	location.href = url[1];
-
 }
+
