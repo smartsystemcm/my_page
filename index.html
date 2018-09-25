@@ -4,17 +4,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="index.css">
       <script type="text/javascript" src="functions_onclick.js"></script>
+      <script type="text/javascript" src="writefile.php"></script>
       <style>
          html { font-family: Helvetica; display: inline-block; margin: 0 px auto; text-align: center;}
       </style>
    </head>
    <body>
        <form method="get" action="writefile.php"> 
-         <h1>Controle Portão Eletrônico XHANE</h1>
+         <h1>Controle Portão Eletrônico</h1>
             <p>Portão Grande (carros)</p>
             <p><a ><input type="button" class="button" value="ABERTO" onclick="button_big_gateway(this)"></a></p> 
             <p>Portão Pequeno</p>
             <p><a ><input type="button" class="button" value="ABERTO" onclick="button_small_gateway(this)"></a></p> 
+            <?php include 'writefile.php';?>
       </form>
    </body>
 </html>
