@@ -19,5 +19,5 @@ function main(){
 	}	
 }
 
-main()
+main();
 ?>
