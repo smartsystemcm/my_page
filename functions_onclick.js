@@ -1,6 +1,6 @@
 function button_big_gateway(_this) {
 	var url=new Array();
-	url[0]="https://smartsystemcm.github.io/my_page/writefile.php?data=Client:4";
+	url[0]="https://smartsystemcm.github.io/my_page/writefile.php";
 	url[1]="https://smartsystemcm.github.io/my_page/";
 
 	var xhttp = new XMLHttpRequest();
@@ -17,7 +17,7 @@ function button_big_gateway(_this) {
 	    }
 	};
 	xhttp.open("GET", url[0], true);
-	xhttp.send();
+	xhttp.send("data=Client:4");
 }
 
 function button_small_gateway(_this) {
